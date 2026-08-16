@@ -5,11 +5,7 @@
 
 const CATEGORY_META = {
   'all':       { icon: '🌐', label: '全部' },
-  'ai':        { icon: '🤖', label: 'AI 中转' },
-  'api':       { icon: '🔌', label: 'API 代理' },
-  'cloud':     { icon: '☁️', label: '网盘资源' },
-  'download':  { icon: '📥', label: '下载站' },
-  'tools':     { icon: '🛠', label: '工具站' }
+  'ai':        { icon: '🤖', label: 'AI 中转' }
 };
 
 let allSites = [];
