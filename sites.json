@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "updated": "2026-08-16",
+  "sites": [
+    {
+      "name": "示例 · AI 中转",
+      "url": "https://example.com/ai",
+      "category": "ai",
+      "desc": "ChatGPT/Claude/Gemini 官方原版转发,稳定可靠,按量计费。",
+      "tags": ["GPT-4", "Claude", "Gemini", "稳定"],
+      "badges": ["hot"],
+      "note": "⭐⭐⭐⭐⭐",
+      "updated": "2026-08-16"
+    },
+    {
+      "name": "示例 · API 代理",
+      "url": "https://example.com/api",
+      "category": "api",
+      "desc": "OpenAI/Claude API 中转,开发者友好,支持企业级并发。",
+      "tags": ["OpenAI", "API", "开发"],
+      "badges": ["new"],
+      "note": "💰 低价",
+      "updated": "2026-08-16"
+    },
+    {
+      "name": "示例 · 网盘资源",
+      "url": "https://example.com/cloud",
+      "category": "cloud",
+      "desc": "阿里夸克115网盘资源分享,影视学习软件全聚合。",
+      "tags": ["阿里云盘", "夸克", "影视"],
+      "badges": ["free"],
+      "note": "📚 海量",
+      "updated": "2026-08-16"
+    },
+    {
+      "name": "示例 · 下载站",
+      "url": "https://example.com/dl",
+      "category": "download",
+      "desc": "BT/磁力/网盘高速下载工具集,支持离线下载。",
+      "tags": ["BT", "磁力", "离线"],
+      "note": "🚀 高速",
+      "updated": "2026-08-16"
+    },
+    {
+      "name": "示例 · 工具站",
+      "url": "https://example.com/tools",
+      "category": "tools",
+      "desc": "在线解析/格式转换/OCR识别等小工具合集。",
+      "tags": ["解析", "转换", "OCR"],
+      "badges": ["new"],
+      "note": "🛠 实用",
+      "updated": "2026-08-16"
+    },
+    {
+      "name": "示例 · AI 中转 2",
+      "url": "https://example.com/ai2",
+      "category": "ai",
+      "desc": "专注 Claude 系列模型,适合写代码写文档。",
+      "tags": ["Claude", "写作", "代码"],
+      "note": "💎 高质量",
+      "updated": "2026-08-16"
+    },
+    {
+      "name": "示例 · API 代理 2",
+      "url": "https://example.com/api2",
+      "category": "api",
+      "desc": "支持多家厂商模型统一计费,账单清晰。",
+      "tags": ["多模型", "统一计费"],
+      "badges": ["hot"],
+      "note": "📊 透明",
+      "updated": "2026-08-16"
+    },
+    {
+      "name": "示例 · 网盘 2",
+      "url": "https://example.com/cloud2",
+      "category": "cloud",
+      "desc": "专注学习资料分享,考研/编程/设计全品类。",
+      "tags": ["学习", "考研", "编程"],
+      "badges": ["free"],
+      "note": "📖 学习",
+      "updated": "2026-08-16"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中转站导航 · Relay Hub</title>
+  <meta name="description" content="聚合全网优质中转站,AI/API/网盘/下载/工具一站直达" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- 顶栏 -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="/">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Relay Hub</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">关于</a>
+        <a href="#submit">收录</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">中转站 · 一站直达</h1>
+      <p class="hero-sub">AI 中转 · API 代理 · 网盘 · 下载 · 工具,全网优质资源聚合</p>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="搜索站点名称、标签、描述..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <kbd class="kbd">/</kbd>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类筛选 -->
+  <section class="filters">
+    <div class="container">
+      <div id="category-tabs" class="tabs"></div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <!-- 站点卡片墙 -->
+  <section class="cards">
+    <div class="container">
+      <div id="card-grid" class="card-grid"></div>
+      <div id="empty-state" class="empty-state hidden">
+        <p>😶 没找到匹配站点</p>
+        <p class="empty-hint">试试别的关键词,或换个分类</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>关于 Relay Hub</h2>
+      <p>收录全网优质中转站,帮用户快速找到所需资源。所有站点人工筛选,定期更新。</p>
+      <div class="about-grid">
+        <div class="about-card">
+          <span class="about-icon">🔄</span>
+          <h3>实时更新</h3>
+          <p>失效站点及时下线,新资源持续收录</p>
+        </div>
+        <div class="about-card">
+          <span class="about-icon">🎯</span>
+          <h3>分类清晰</h3>
+          <p>按用途分类,搜索精准,一秒直达</p>
+        </div>
+        <div class="about-card">
+          <span class="about-icon">🛡</span>
+          <h3>人工筛选</h3>
+          <p>所有站点人工核验,过滤垃圾资源</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 收录 -->
+  <section id="submit" class="submit">
+    <div class="container">
+      <h2>📮 推荐收录</h2>
+      <p>有优质站点想推荐?填写下方表单,我们审核后收录。</p>
+      <a class="btn btn-primary" href="mailto:admin@example.com?subject=推荐收录中转站">
+        📧 邮件推荐
+      </a>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>Relay Hub · 仅供资源聚合,不存储任何内容</p>
+      <p class="footer-meta">
+        <span>部署于 Cloudflare Pages</span>
+        ·
+        <span>数据更新于 <span id="last-updated"></span></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
