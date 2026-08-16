@@ -1,7 +1,17 @@
 {
-  "version": "1.0",
-  "updated": "2026-08-16",
+  "version": "1.1",
+  "updated": "2026-08-17",
   "sites": [
+    {
+      "name": "Agent Router",
+      "url": "https://agentrouter.org/register?aff=FXux",
+      "category": "ai",
+      "desc": "一站式 AI API 网关,统一接入 Claude/GPT/Gemini/DeepSeek 等多模型,稳定低价企业级 SLA。",
+      "tags": ["Claude", "GPT", "Gemini", "DeepSeek", "多模型"],
+      "badges": ["hot"],
+      "note": "⭐⭐⭐⭐½",
+      "updated": "2026-08-17"
+    },
     {
       "name": "示例 · AI 中转",
       "url": "https://example.com/ai",
