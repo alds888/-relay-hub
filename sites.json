@@ -1,5 +1,5 @@
 {
-  "version": "1.3",
+  "version": "1.4",
   "updated": "2026-08-17",
   "sites": [
     {
@@ -18,6 +18,16 @@
       "category": "ai",
       "desc": "AI 中转服务平台,提供多模型 API 调用额度,虚拟商品一站式采购。",
       "tags": ["Token", "API额度", "多模型"],
+      "badges": ["new"],
+      "note": "✨ 新收录",
+      "updated": "2026-08-17"
+    },
+    {
+      "name": "daitu.cc",
+      "url": "https://daitu.cc/register?aff=XMTXCX6PE5VM",
+      "category": "ai",
+      "desc": "AI 大模型 API 中转服务,稳定可靠,多模型支持。",
+      "tags": ["API中转", "多模型"],
       "badges": ["new"],
       "note": "✨ 新收录",
       "updated": "2026-08-17"
