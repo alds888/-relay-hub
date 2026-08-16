@@ -13,6 +13,7 @@ const CATEGORY_META = {
 };
 
 let allSites = [];
+let sitesMeta = {};
 let currentCategory = 'all';
 let currentKeyword = '';
 
@@ -24,7 +25,10 @@ async function init() {
   try {
     const res = await fetch('sites.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    allSites = await res.json();
+    const data = await res.json();
+    // 兼容两种格式: { sites: [...] } 或 直接数组 [...]
+    allSites = Array.isArray(data) ? data : (data.sites || []);
+    sitesMeta = { version: data.version, updated: data.updated };
     renderTabs();
     render();
     updateLastUpdated();
@@ -199,6 +203,11 @@ async function copyUrl(btn) {
 /* ---------- 元信息 ---------- */
 function updateLastUpdated() {
   const el = document.getElementById('last-updated');
+  // 优先用 sites.json 顶层的 updated,否则从所有站点里取最新
+  if (sitesMeta.updated) {
+    el.textContent = sitesMeta.updated;
+    return;
+  }
   const latest = allSites
     .map(s => s.updated)
     .filter(Boolean)
