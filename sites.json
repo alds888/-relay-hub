@@ -1,5 +1,5 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "updated": "2026-08-17",
   "sites": [
     {
@@ -10,6 +10,16 @@
       "tags": ["Claude", "GPT", "Gemini", "DeepSeek", "多模型"],
       "badges": ["hot"],
       "note": "⭐⭐⭐⭐½",
+      "updated": "2026-08-17"
+    },
+    {
+      "name": "雪顶 Token",
+      "url": "https://shop.xuedingtoken.com/?invite=FS2MWJJF",
+      "category": "ai",
+      "desc": "AI 中转服务平台,提供多模型 API 调用额度,虚拟商品一站式采购。",
+      "tags": ["Token", "API额度", "多模型"],
+      "badges": ["new"],
+      "note": "✨ 新收录",
       "updated": "2026-08-17"
     }
   ]
