@@ -232,3 +232,56 @@ window.copyUrl = copyUrl;
 
 /* 启动 */
 document.addEventListener('DOMContentLoaded', init);
+
+/* ---------- 收录表单（AJAX 提交到 Formspree） ---------- */
+function initSubmitForm() {
+  const form = document.getElementById('submit-form');
+  if (!form) return;
+  const status = document.getElementById('form-status');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (status) {
+      status.className = 'form-status';
+      status.textContent = '提交中...';
+    }
+    if (submitBtn) submitBtn.disabled = true;
+
+    try {
+      const resp = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (resp.ok) {
+        if (status) {
+          status.className = 'form-status success';
+          status.textContent = '✅ 提交成功！我们会尽快审核。';
+        }
+        form.reset();
+      } else {
+        const data = await resp.json().catch(() => ({}));
+        const msg = (data && data.errors && data.errors.map(function(x){return x.message;}).join('; ')) || '提交失败，请稍后重试。';
+        if (status) {
+          status.className = 'form-status error';
+          status.textContent = '❌ ' + msg;
+        }
+      }
+    } catch (err) {
+      if (status) {
+        status.className = 'form-status error';
+        status.textContent = '❌ 网络错误，请稍后重试。';
+      }
+    } finally {
+      if (submitBtn) submitBtn.disabled = false;
+    }
+  });
+}
+
+// 包装原 init，在原逻辑执行后再绑定表单
+const _origInit = init;
+init = function() {
+  _origInit();
+  initSubmitForm();
+};

@@ -427,6 +427,91 @@ a { color: inherit; text-decoration: none; }
 
 .submit p { color: var(--text-sub); margin-bottom: 24px; }
 
+.submit-form {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.submit-form .form-group {
+  margin-bottom: 16px;
+}
+
+.submit-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.submit-form input[type="text"],
+.submit-form input[type="url"],
+.submit-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-card);
+  color: var(--text);
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.submit-form input:focus,
+.submit-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(246, 130, 31, 0.15);
+}
+
+.submit-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.form-status {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+  min-height: 0;
+}
+
+.form-status.success {
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+}
+
+.form-status.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+}
+
+.submit-fallback {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--text-sub);
+}
+
+.submit-fallback a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.submit-fallback a:hover {
+  text-decoration: underline;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 28px;

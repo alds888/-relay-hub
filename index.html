@@ -93,9 +93,28 @@
     <div class="container">
       <h2>📮 推荐收录</h2>
       <p>有优质站点想推荐?填写下方表单,我们审核后收录。</p>
-      <a class="btn btn-primary" href="mailto:sdd19098@gmail.com?subject=推荐收录中转站&body=站名:%0D%0A链接:%0D%0A简介:%0D%0A">
-        📧 邮件推荐
-      </a>
+
+      <form id="submit-form" class="submit-form" action="https://formspree.io/f/xvkpvnvd" method="POST">
+        <div class="form-group">
+          <label for="f-name">站名</label>
+          <input id="f-name" name="站名" type="text" placeholder="例:XX中转站" required />
+        </div>
+        <div class="form-group">
+          <label for="f-url">链接</label>
+          <input id="f-url" name="链接" type="url" placeholder="https://..." required />
+        </div>
+        <div class="form-group">
+          <label for="f-desc">简介</label>
+          <textarea id="f-desc" name="简介" rows="3" placeholder="一句话介绍这个站点" required></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="【推荐收录】新中转站推荐" />
+        <button type="submit" class="btn btn-primary btn-block">📧 提交推荐</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <p class="submit-fallback">
+        或 <a href="mailto:curc17459@gmail.com?subject=推荐收录中转站&body=站名:%0D%0A链接:%0D%0A简介:%0D%0A">邮件推荐</a>
+      </p>
     </div>
   </section>
 
