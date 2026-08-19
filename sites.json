@@ -1,6 +1,6 @@
 {
-  "version": "1.4",
-  "updated": "2026-08-17",
+  "version": "1.5",
+  "updated": "2026-08-19",
   "sites": [
     {
       "name": "Agent Router",
@@ -31,6 +31,16 @@
       "badges": ["new"],
       "note": "✨ 新收录",
       "updated": "2026-08-17"
+    },
+    {
+      "name": "XOGPU",
+      "url": "https://xogpu.com/sign-up?aff=pc92",
+      "category": "ai",
+      "desc": "国内直连 AI API 中转站,主打大陆网络直连与多模型 API 转发。",
+      "tags": ["国内直连", "API中转", "多模型"],
+      "badges": ["new"],
+      "note": "✨ 新收录 · 待评测",
+      "updated": "2026-08-19"
     }
   ]
 }
